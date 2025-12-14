@@ -5,7 +5,7 @@
     (export deftemplate initial-fact)
     (export deftemplate tic)
 )
-
+(deftemplate MAIN::initial-fact)
 (deftemplate MAIN::tic)
 
 (defglobal ?*main-in-debug* = FALSE)

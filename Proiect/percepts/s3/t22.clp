@@ -1,0 +1,18 @@
+(ag_percept (percept_pobj ev22) (percept_pname isa) (percept_pval event))
+(ag_percept (percept_pobj ev22) (percept_pname event_type) (percept_pval close_approach))
+(ag_percept (percept_pobj road1) (percept_pname isa) (percept_pval road))
+(ag_percept (percept_pobj my_car) (percept_pname isa) (percept_pval car))
+(ag_percept (percept_pobj car1) (percept_pname isa) (percept_pval car))
+(ag_percept (percept_pobj car2) (percept_pname isa) (percept_pval car))
+(ag_percept (percept_pobj line1) (percept_pname isa) (percept_pval line))
+
+(ag_percept (percept_pobj road1) (percept_pname road_location) (percept_pval city_road))
+(ag_percept (percept_pobj my_car) (percept_pname direction) (percept_pval north))
+(ag_percept (percept_pobj car1) (percept_pname direction) (percept_pval north))
+(ag_percept (percept_pobj car2) (percept_pname direction) (percept_pval north))
+(ag_percept (percept_pobj length_car) (percept_pname value) (percept_pval 4))
+
+(ag_percept (percept_pobj my_car) (percept_pname speed) (percept_pval 1))              
+(ag_percept (percept_pobj car2) (percept_pname distance_to_my_car) (percept_pval 12)) 
+(ag_percept (percept_pobj car2) (percept_pname speed) (percept_pval 10)) 
+(ag_percept (percept_pobj line1) (percept_pname type) (percept_pval broken_white_line))
