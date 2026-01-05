@@ -1,6 +1,6 @@
 (ag_percept (percept_pobj road1) (percept_pname isa) (percept_pval road))
-(ag_percept (percept_pobj road1) (percept_pname type) (percept_pval acceleration_lane))
+(ag_percept (percept_pobj road1) (percept_pname status) (percept_pval clear_city_road))
 (ag_percept (percept_pobj line1) (percept_pname isa) (percept_pval line))
 (ag_percept (percept_pobj line1) (percept_pname type) (percept_pval continuous_line))
 (ag_percept (percept_pobj my_car) (percept_pname isa) (percept_pval car))
-(ag_percept (percept_pobj my_car) (percept_pname speed) (percept_pval 60))
+(ag_percept (percept_pobj my_car) (percept_pname speed) (percept_pval 50))

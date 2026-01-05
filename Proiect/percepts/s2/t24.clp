@@ -1,0 +1,6 @@
+(ag_percept (percept_pobj my_car) (percept_pname isa) (percept_pval car))
+(ag_percept (percept_pobj my_car) (percept_pname lane) (percept_pval lane_1))
+(ag_percept (percept_pobj cyclist1) (percept_pname isa) (percept_pval cyclist))
+(ag_percept (percept_pobj cyclist1) (percept_pname rel_dist) (percept_pval -15))
+(ag_percept (percept_pobj line1) (percept_pname isa) (percept_pval line))
+(ag_percept (percept_pobj line1) (percept_pname type) (percept_pval broken_line))

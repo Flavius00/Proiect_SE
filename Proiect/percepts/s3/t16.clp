@@ -1,0 +1,6 @@
+(ag_percept (percept_pobj my_car) (percept_pname isa) (percept_pval car))
+(ag_percept (percept_pobj my_car) (percept_pname lane) (percept_pval lane_1))
+(ag_percept (percept_pobj my_car) (percept_pname speed) (percept_pval 110))
+(ag_percept (percept_pobj line1) (percept_pname isa) (percept_pval line))
+(ag_percept (percept_pobj line1) (percept_pname type) (percept_pval broken_line))
+(ag_percept (percept_pobj road1) (percept_pname status) (percept_pval clear_highway))

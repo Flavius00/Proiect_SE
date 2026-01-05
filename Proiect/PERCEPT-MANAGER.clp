@@ -21,17 +21,21 @@
 ;-------Trecere la ciclul de timp urmator si adaugarea la WM a perceptii din acest ciclu------------
 ;
 (defrule PERCEPT-MANAGER::advance-time-percepts
-    (declare (salience -95)) ; executata dupa stergerea perceptiilor anterioare
-    ?tc <- (tic) ; pentru a nu intra in bucla infinita
+    (declare (salience -95))
+    ?tc <- (tic)
     ?tp <- (timp (valoare ?t))
 =>
-    (if (eq ?*sim-in-debug* TRUE) then (printout t "<D>PERCEPT-MANAGER: advance-time-percepts (+ stergere tic)" crlf))
     (bind ?nt (+ 1 ?t))
-    (printout t "   PERCEPT-MANAGER: timp = " ?nt crlf)
+    (if (> ?nt 35) then 
+        (bind ?nt 1)
+        (if (eq ?*scenariu* "s1") then (bind ?*scenariu* "s2")
+         else (if (eq ?*scenariu* "s2") then (bind ?*scenariu* "s3"))))
+
     (retract ?tp)
     (assert (timp (valoare ?nt)))
-    (retract ?tc) ; pentru a nu intra in bucla infinita
-    (load-facts (sym-cat ?*perceptsDir* "t" ?nt ".clp"))
-;    (printout t "   DRIVER-AGENT: facts: " crlf)
-;    (facts AGENT)
+    (retract ?tc)
+
+    (bind ?cale (str-cat ?*perceptsDir* ?*scenariu* "/t" ?nt ".clp")) ; Folosim str-cat pentru siguranta
+    (printout t ">>> Incarcare: " ?cale crlf)
+    (load-facts ?cale)
 )

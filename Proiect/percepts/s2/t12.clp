@@ -1,0 +1,6 @@
+(ag_percept (percept_pobj tram1) (percept_pname isa) (percept_pval tram))
+(ag_percept (percept_pobj tram1) (percept_pname action) (percept_pval closing_doors))
+(ag_percept (percept_pobj tram1) (percept_pname signal) (percept_pval left))
+(ag_percept (percept_pobj line1) (percept_pname isa) (percept_pval line))
+(ag_percept (percept_pobj line1) (percept_pname type) (percept_pval continuous_line))
+(ag_percept (percept_pobj my_car) (percept_pname isa) (percept_pval car))

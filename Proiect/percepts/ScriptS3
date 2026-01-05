@@ -1,0 +1,69 @@
+Cadrul 1: - nu – Rulare pe banda de accelerare, viteza 60 km/h, linie continua (continuous_line) fata de banda 1.
+
+Cadrul 2: - nu – Accelerare la 90 km/h, linia devine discontinua (broken_line) spre banda 1.
+
+Cadrul 3: - da – Intrare pe banda 1, viteza 100 km/h, linie discontinua.
+
+Cadrul 4: - da – Drum liber, viteza 130 km/h (limita maxima), linie discontinua.
+
+Cadrul 5: - da – Detecteaza masina in fata (car_slow) pe banda 1, viteza 100 km/h, distanta 200m.
+
+Cadrul 6: - da – Apropiere de car_slow (150m), semnalizare stanga, linie discontinua.
+
+Cadrul 7: - da – Schimbare pe banda 2, viteza 130 km/h, linie discontinua.
+
+Cadrul 8: - da – In dreptul masinii car_slow, linie discontinua.
+
+Cadrul 9: - da – Depasire finalizata, car_slow este in spate (50m), linie discontinua.
+
+Cadrul 10: - da – Revenire pe banda 1, mentinere viteza 130 km/h, linie discontinua.
+
+Cadrul 11: - nu – Detecteaza indicator "Lucrari in fata", reducere viteza la 100 km/h, linie discontinua.
+
+Cadrul 12: - nu – Conuri de semnalizare pe banda de urgenta, linie continua spre dreapta.
+
+Cadrul 13: - nu – Detecteaza utilaj de lucru pe banda 1, linie continua intre benzi (obligatoriu banda 2).
+
+Cadrul 14: - nu – Rulare pe banda 2 in zona cu lucrari, viteza 80 km/h, linie continua.
+
+Cadrul 15: - nu – Iesire din zona cu lucrari, linie discontinua.
+
+Cadrul 16: - da – Revenire pe banda 1, accelerare la 110 km/h, linie discontinua.
+
+Cadrul 17: - da – Apare ploaie torentiala, vizibilitate scazuta, linie discontinua.
+
+Cadrul 18: - nu – Viteza redusa la 80 km/h (siguranta), aprindere lumini ceata, linie discontinua.
+
+Cadrul 19: - nu – Detecteaza masina stationata pe banda de urgenta cu avarii, linie discontinua.
+
+Cadrul 20: - nu – Acvaplanare usoara, mentinere directie, viteza 70 km/h, linie discontinua.
+
+Cadrul 21: - da – Ploaia se opreste, carosabilul ramane umed (wet_road), linie discontinua.
+
+Cadrul 22: - da – Accelerare treptata la 100 km/h, drum liber, linie discontinua.
+
+Cadrul 23: - da – Detecteaza camion (truck2) pe banda 1, distanta 300m, linie discontinua.
+
+Cadrul 24: - da – Verificare oglinzi, masina rapida (car_fast) vine pe banda 2 din spate, linie discontinua.
+
+Cadrul 25: - nu – Asteptam trecerea car_fast, ramanem pe banda 1 in spatele camionului, linie discontinua.
+
+Cadrul 26: - da – car_fast a trecut, semnalizare stanga, linie discontinua.
+
+Cadrul 27: - da – Intrare pe banda 2 pentru depasire camion, viteza 120 km/h, linie discontinua.
+
+Cadrul 28: - da – In dreptul camionului, vant lateral puternic, linie discontinua.
+
+Cadrul 29: - da – Finalizare depasire camion, distanta spate 100m, linie discontinua.
+
+Cadrul 30: - da – Revenire pe banda 1, viteza 130 km/h, linie discontinua.
+
+Cadrul 31: - nu – Detecteaza indicator "Iesire autostrada" la 1000m, linie discontinua.
+
+Cadrul 32: - nu – Pozitionare pentru iesire, viteza 100 km/h, linie discontinua.
+
+Cadrul 33: - nu – Intrare pe banda de decelerare, linie continua fata de banda 1.
+
+Cadrul 34: - nu – Franare pe rampa de iesire, curba stransa, viteza 50 km/h, linie continua.
+
+Cadrul 35: - da – Iesire de pe autostrada, oprire la semnul STOP/Cedeaza, final scenariu.

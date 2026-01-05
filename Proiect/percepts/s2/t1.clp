@@ -1,11 +1,6 @@
-
-(ag_percept (percept_pobj car1) (percept_pname isa) (percept_pval vehicle))
-(ag_percept (percept_pobj car1) (percept_pname has_type) (percept_pval car))
-(ag_percept (percept_pobj car1) (percept_pname rel_pos) (percept_pval front))
-(ag_percept (percept_pobj car1) (percept_pname rel_dist) (percept_pval 8000)) ; 80m
-(ag_percept (percept_pobj car1) (percept_pname has_speed) (percept_pval 60))
-
-(ag_percept (percept_pobj road) (percept_pname isa) (percept_pval road_attribute))
-(ag_percept (percept_pobj road) (percept_pname has_type) (percept_pval national_road))
-
-(ag_percept (percept_pobj road_sign1) (percept_pname type) (percept_pval overtaking_permitted))
+(ag_percept (percept_pobj road1) (percept_pname isa) (percept_pval road))
+(ag_percept (percept_pobj road1) (percept_pname road_location) (percept_pval city_road))
+(ag_percept (percept_pobj line1) (percept_pname isa) (percept_pval line))
+(ag_percept (percept_pobj line1) (percept_pname type) (percept_pval broken_line))
+(ag_percept (percept_pobj my_car) (percept_pname isa) (percept_pval car))
+(ag_percept (percept_pobj my_car) (percept_pname speed) (percept_pval 45))

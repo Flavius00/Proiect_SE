@@ -1,0 +1,6 @@
+(ag_percept (percept_pobj road1) (percept_pname isa) (percept_pval road))
+(ag_percept (percept_pobj road1) (percept_pname status) (percept_pval construction_zone))
+(ag_percept (percept_pobj my_car) (percept_pname isa) (percept_pval car))
+(ag_percept (percept_pobj my_car) (percept_pname lane) (percept_pval lane_2))
+(ag_percept (percept_pobj line1) (percept_pname isa) (percept_pval line))
+(ag_percept (percept_pobj line1) (percept_pname type) (percept_pval continuous_line))

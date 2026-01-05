@@ -1,0 +1,71 @@
+Iată scriptul de idei pentru Scenariul 1 (S1) rescris, incluzând permisiunea de depășire pentru fiecare cadru conform regulilor de circulație și logicii sistemului tău expert:
+
+Cadrul 1: - da – Drum drept (national_road), viteză proprie 80 km/h, linie discontinuă (broken_line).
+
+Cadrul 2: - da – Detectează camion în față (truck1) la 150m, viteză camion 60 km/h, linie discontinuă.
+
+Cadrul 3: - da – Apropiere de camion (130m), viteză 80 km/h, linie discontinuă.
+
+Cadrul 4: - da – Camion la 110m, detectează indicator "Curbă la dreapta" în depărtare, linie discontinuă.
+
+Cadrul 5: - nu – Camion la 90m, detectează începutul benzii continue (continuous_line).
+
+Cadrul 6: - nu – Camion la 70m, intrare în curbă cu vizibilitate redusă, linie continuă.
+
+Cadrul 7: - nu – Camion la 60m, rulare în curbă, linie continuă.
+
+Cadrul 8: - nu – Camion la 55m, detectează indicator "Depășirea interzisă", linie continuă.
+
+Cadrul 9: - nu – Menținere viteză 60 km/h în spatele camionului, distanță constantă 50m, linie continuă.
+
+Cadrul 10: - nu – Apare ploaie ușoară și carosabil umed (wet_road), linie continuă.
+
+Cadrul 11: - nu – Reducere viteză la 55 km/h (siguranță), camion la 40m, linie continuă.
+
+Cadrul 12: - nu – Detectează pod în față (bridge), restricție depășire activă, linie continuă.
+
+Cadrul 13: - nu – Rulare pe pod, distanță față de camion 40m, linie continuă.
+
+Cadrul 14: - nu – Ieșire de pe pod, ploaia se oprește, vizibilitatea crește, linie continuă.
+
+Cadrul 15: - nu – Detectează mașină pe contrasens (car2) la 200m, linie continuă.
+
+Cadrul 16: - nu – Mașina de pe contrasens trece prin dreptul nostru, distanță camion 40m, linie continuă.
+
+Cadrul 17: - nu – Detectează indicator "Sfârșitul interzicerii de a depăși", linie continuă încă prezentă.
+
+Cadrul 18: - da – Drumul devine drept, linia devine discontinuă (broken_line), contrasens liber.
+
+Cadrul 19: - da – Semnalizare stânga (inițiere manevra), accelerație la 70 km/h, linie discontinuă.
+
+Cadrul 20: - da – Schimbare bandă, poziționare pe contrasens în dreptul spatelui camionului, viteză 80 km/h, linie discontinuă.
+
+Cadrul 21: - da – Poziționare în dreptul cabinei camionului, viteză 90 km/h, linie discontinuă.
+
+Cadrul 22: - da – Depășire aproape finalizată, camionul este la 10m în spate, linie discontinuă.
+
+Cadrul 23: - da – Revenire pe banda 1, viteză 90 km/h, linie discontinuă.
+
+Cadrul 24: - da – Camionul este în spate la 30m, drum liber în față, linie discontinuă.
+
+Cadrul 25: - nu – Detectează intersecție cu drum secundar și indicator "Drum cu prioritate", linie discontinuă.
+
+Cadrul 26: - nu – Traversare intersecție, linie continuă în dreptul ei.
+
+Cadrul 27: - da – Ieșire din intersecție, revenire la linie discontinuă, drum liber.
+
+Cadrul 28: - da – Viteză constantă 90 km/h, detectează indicator "Drum cu denivelări", linie discontinuă.
+
+Cadrul 29: - da – Rulare pe sector cu denivelări, viteză redusă la 70 km/h, linie discontinuă.
+
+Cadrul 30: - da – Continuare rulare pe drum degradat, linie discontinuă.
+
+Cadrul 31: - da – Terminare zonă cu denivelări, drum în stare bună, linie discontinuă.
+
+Cadrul 32: - da – Detectează indicator "Intrare localitate" în depărtare, decelerare la 80 km/h, linie discontinuă.
+
+Cadrul 33: - da – Intrare în localitate (city_road), viteză 50 km/h, linie discontinuă.
+
+Cadrul 34: - nu – Detectează pieton pe trotuar, linia devine continuă în oraș.
+
+Cadrul 35: - nu – Drum liber în localitate, viteză 50 km/h, linie continuă. Final scenariu.

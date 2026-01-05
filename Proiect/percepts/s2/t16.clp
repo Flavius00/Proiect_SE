@@ -1,0 +1,8 @@
+(ag_percept (percept_pobj my_car) (percept_pname isa) (percept_pval car))
+(ag_percept (percept_pobj my_car) (percept_pname speed) (percept_pval 45))
+(ag_percept (percept_pobj tram1) (percept_pname isa) (percept_pval tram))
+(ag_percept (percept_pobj tram1) (percept_pname rel_dist) (percept_pval 0))
+(ag_percept (percept_pobj car_parked) (percept_pname isa) (percept_pval car))
+(ag_percept (percept_pobj car_parked) (percept_pname status) (percept_pval parked_on_lane_1))
+(ag_percept (percept_pobj line1) (percept_pname isa) (percept_pval line))
+(ag_percept (percept_pobj line1) (percept_pname type) (percept_pval broken_line))

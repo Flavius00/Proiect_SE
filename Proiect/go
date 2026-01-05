@@ -8,5 +8,5 @@
 (load "maneuverValidityASK.clp")
 (reset)
 (printout t "INFERENCE TIME START: " (time) crlf)
-(run 180)
+(run 120)
 (printout t "INFERENCE TIME ENDED: " (time) crlf)

@@ -1,0 +1,71 @@
+Iată scriptul de idei pentru Scenariul 2 (S2 - Mediu Urban), adaptat pentru a fi consistent cu regulile stabilite (2-3 obiecte pe cadru, precizarea tipului de linie și a permisiunii de depășire), fără diacritice:
+
+Cadrul 1: - da – Drum urban (city_road), viteza 45 km/h, linie discontinua (broken_line).
+
+Cadrul 2: - nu – Detecteaza trecere de pietoni (pedestrian_crossing) in fata, linie discontinua.
+
+Cadrul 3: - nu – Detecteaza pieton angajat in traversare, viteza redusa la 20 km/h, linie discontinua.
+
+Cadrul 4: - da – Pietonul a finalizat traversarea, accelerare la 45 km/h, linie discontinua.
+
+Cadrul 5: - nu – Detecteaza intersectie semnalizata, semafor verde, linie continua (continuous_line).
+
+Cadrul 6: - nu – Traversare intersectie, detecteaza masina de politie stationata, linie continua.
+
+Cadrul 7: - da – Iesire din intersectie, revenire la linie discontinua (broken_line).
+
+Cadrul 8: - nu – Detecteaza tramvai in fata (tram1) la 100m, viteza 30 km/h, linie discontinua.
+
+Cadrul 9: - nu – Detecteaza statie de tramvai fara refugiu in fata, linie discontinua.
+
+Cadrul 10: - nu – Tramvaiul opreste in statie, viteza proprie 0 km/h, linie continua.
+
+Cadrul 11: - nu – Tramvaiul este inca in statie, calatorii coboara, linie continua.
+
+Cadrul 12: - da – Tramvaiul inchide usile, semnal stanga, linie continua.
+
+Cadrul 13: - da – Tramvaiul porneste, acceleram in spate (20m), linie discontinua.
+
+Cadrul 14: - da – Drumul se largeste la 2 benzi, spatiu liber pe banda 2, linie discontinua.
+
+Cadrul 15: - da – Schimbare banda pe banda 2 pentru depasire tramvai, linie discontinua.
+
+Cadrul 16: - da – Suntem in dreptul tramvaiului, detecteaza masina parcata pe banda 1, linie discontinua.
+
+Cadrul 17: - da – Depasire tramvai finalizata, drum liber pe banda 2, linie discontinua.
+
+Cadrul 18: - nu – Detecteaza biciclist (cyclist1) pe margine, linie continua intre benzi.
+
+Cadrul 19: - nu – Rulare in spatele biciclistului (10m), viteza 20 km/h, linie continua.
+
+Cadrul 20: - nu – Detecteaza indicator "Atentie copii" in zona unei scoli, linie continua.
+
+Cadrul 21: - nu – Viteza redusa la 30 km/h conform indicatorului, linie continua.
+
+Cadrul 22: - da – Iesire din zona scolii, linia devine discontinua (broken_line).
+
+Cadrul 23: - da – Depasim biciclistul, pastram distanta laterala, linie discontinua.
+
+Cadrul 24: - da – Revenire pe banda 1 dupa biciclist, drum liber, linie discontinua.
+
+Cadrul 25: - nu – Detecteaza groapa in carosabil pe banda 1, ocolire, linie discontinua.
+
+Cadrul 26: - nu – Detecteaza indicator "Interzis la stanga" in fata, linie continua.
+
+Cadrul 27: - da – Drum liber, viteza 50 km/h, linie discontinua (broken_line).
+
+Cadrul 28: - nu – Detecteaza ambulanta cu semnale in spate, ne tragem pe dreapta, linie discontinua.
+
+Cadrul 29: - nu – Ambulanta ne depaseste, viteza proprie 30 km/h, linie discontinua.
+
+Cadrul 30: - da – Revenire la centrul benzii, accelerare la 45 km/h, linie discontinua.
+
+Cadrul 31: - nu – Detecteaza cale ferata industriala fara bariere, viteza redusa, linie continua.
+
+Cadrul 32: - nu – Traversare cale ferata, carosabil cu denivelari, linie continua.
+
+Cadrul 33: - da – Detecteaza indicator "Iesire localitate" in departare, linie discontinua.
+
+Cadrul 34: - da – Drumul devine drum national (national_road), linie discontinua (broken_line).
+
+Cadrul 35: - da – Drum liber la iesirea din oras, viteza 60 km/h, linie discontinua. Final scenariu.

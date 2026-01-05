@@ -45,7 +45,11 @@
     (import MAIN deftemplate initial-fact)
     (import PERCEPT-MANAGER deftemplate timp)
     (import PERCEPT-MANAGER deftemplate ag_percept)
+    (export deftemplate ag_bel)    
+    (export deftemplate ag_overtaking) 
 )
+
+
 (defglobal ?*ag-in-debug* = FALSE)
 ;(defglobal ?*ag-in-debug* = TRUE)
 (defglobal ?*ag-percepts-in-debug* = FALSE)
@@ -61,3 +65,5 @@
     (slot ag_name)
     (slot ag_value)
 )
+
+(defglobal PERCEPT-MANAGER ?*scenariu* = "s1")
