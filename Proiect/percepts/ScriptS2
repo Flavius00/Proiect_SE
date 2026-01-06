@@ -2,7 +2,7 @@ Iată scriptul de idei pentru Scenariul 2 (S2 - Mediu Urban), adaptat pentru a f
 
 Cadrul 1: - da – Drum urban (city_road), viteza 45 km/h, linie discontinua (broken_line).
 
-Cadrul 2: - nu – Detecteaza trecere de pietoni (pedestrian_crossing) in fata, linie discontinua.
+Cadrul 2: - da – Detecteaza trecere de pietoni (pedestrian_crossing) in fata, linie discontinua.
 
 Cadrul 3: - nu – Detecteaza pieton angajat in traversare, viteza redusa la 20 km/h, linie discontinua.
 
@@ -14,7 +14,7 @@ Cadrul 6: - nu – Traversare intersectie, detecteaza masina de politie stationa
 
 Cadrul 7: - da – Iesire din intersectie, revenire la linie discontinua (broken_line).
 
-Cadrul 8: - nu – Detecteaza tramvai in fata (tram1) la 100m, viteza 30 km/h, linie discontinua.
+Cadrul 8: - da – Detecteaza tramvai in fata (tram1) la 100m, viteza 30 km/h, linie discontinua.
 
 Cadrul 9: - nu – Detecteaza statie de tramvai fara refugiu in fata, linie discontinua.
 
@@ -22,7 +22,7 @@ Cadrul 10: - nu – Tramvaiul opreste in statie, viteza proprie 0 km/h, linie co
 
 Cadrul 11: - nu – Tramvaiul este inca in statie, calatorii coboara, linie continua.
 
-Cadrul 12: - da – Tramvaiul inchide usile, semnal stanga, linie continua.
+Cadrul 12: - nu – Tramvaiul inchide usile, semnal stanga, linie continua.
 
 Cadrul 13: - da – Tramvaiul porneste, acceleram in spate (20m), linie discontinua.
 

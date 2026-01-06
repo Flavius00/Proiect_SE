@@ -1,6 +1,6 @@
 Cadrul 1: - nu – Rulare pe banda de accelerare, viteza 60 km/h, linie continua (continuous_line) fata de banda 1.
 
-Cadrul 2: - nu – Accelerare la 90 km/h, linia devine discontinua (broken_line) spre banda 1.
+Cadrul 2: - da – Accelerare la 90 km/h, linia devine discontinua (broken_line) spre banda 1.
 
 Cadrul 3: - da – Intrare pe banda 1, viteza 100 km/h, linie discontinua.
 
@@ -20,13 +20,13 @@ Cadrul 10: - da – Revenire pe banda 1, mentinere viteza 130 km/h, linie discon
 
 Cadrul 11: - nu – Detecteaza indicator "Lucrari in fata", reducere viteza la 100 km/h, linie discontinua.
 
-Cadrul 12: - da – Conuri de semnalizare pe banda de urgenta, linie continua spre dreapta.
+Cadrul 12: - nu – Conuri de semnalizare pe banda de urgenta, linie continua spre dreapta.
 
 Cadrul 13: - nu – Detecteaza utilaj de lucru pe banda 1, linie continua intre benzi (obligatoriu banda 2).
 
 Cadrul 14: - nu – Rulare pe banda 2 in zona cu lucrari, viteza 80 km/h, linie continua.
 
-Cadrul 15: - nu – Iesire din zona cu lucrari, linie discontinua.
+Cadrul 15: - da – Iesire din zona cu lucrari, linie discontinua.
 
 Cadrul 16: - da – Revenire pe banda 1, accelerare la 110 km/h, linie discontinua.
 
@@ -44,7 +44,7 @@ Cadrul 22: - da – Accelerare treptata la 100 km/h, drum liber, linie discontin
 
 Cadrul 23: - da – Detecteaza camion (truck2) pe banda 1, distanta 300m, linie discontinua.
 
-Cadrul 24: - da – Verificare oglinzi, masina rapida (car_fast) vine pe banda 2 din spate, linie discontinua.
+Cadrul 24: - nu – Verificare oglinzi, masina rapida (car_fast) vine pe banda 2 din spate, linie discontinua.
 
 Cadrul 25: - nu – Asteptam trecerea car_fast, ramanem pe banda 1 in spatele camionului, linie discontinua.
 
