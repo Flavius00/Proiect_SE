@@ -1,5 +1,7 @@
 (ag_percept (percept_pobj emergency_lane) (percept_pname isa) (percept_pval road_part))
 (ag_percept (percept_pobj emergency_lane) (percept_pname status) (percept_pval blocked_by_cones))
+(ag_percept (percept_pobj sign_work) (percept_pname isa) (percept_pval road_sign))
+(ag_percept (percept_pobj sign_work) (percept_pname type) (percept_pval road_works))
 (ag_percept (percept_pobj line1) (percept_pname isa) (percept_pval line))
 (ag_percept (percept_pobj line1) (percept_pname type) (percept_pval broken_line))
 (ag_percept (percept_pobj my_car) (percept_pname isa) (percept_pval car))

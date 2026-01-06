@@ -26,16 +26,22 @@
     ?tp <- (timp (valoare ?t))
 =>
     (bind ?nt (+ 1 ?t))
+    (bind ?run-load TRUE) ; Variabilă de control
+    
     (if (> ?nt 35) then 
-        (bind ?nt 1)
-        (if (eq ?*scenariu* "s1") then (bind ?*scenariu* "s2")
-         else (if (eq ?*scenariu* "s2") then (bind ?*scenariu* "s3"))))
+        (if (eq ?*scenariu* "s1") then (bind ?*scenariu* "s2") (bind ?nt 1)
+         else (if (eq ?*scenariu* "s2") then (bind ?*scenariu* "s3") (bind ?nt 1)
+         else 
+            (printout t "--- SIMULARE FINALIZATA ---" crlf)
+            (bind ?run-load FALSE) ; Nu mai încărcăm nimic
+            (halt))))
 
     (retract ?tp)
     (assert (timp (valoare ?nt)))
     (retract ?tc)
 
-    (bind ?cale (str-cat ?*perceptsDir* ?*scenariu* "/t" ?nt ".clp")) ; Folosim str-cat pentru siguranta
-    (printout t ">>> Incarcare: " ?cale crlf)
-    (load-facts ?cale)
+    (if (eq ?run-load TRUE) then
+        (bind ?cale (str-cat ?*perceptsDir* ?*scenariu* "/t" ?nt ".clp"))
+        (printout t ">>> Incarcare: " ?cale crlf)
+        (load-facts ?cale))
 )

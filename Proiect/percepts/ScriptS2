@@ -48,7 +48,7 @@ Cadrul 23: - da – Depasim biciclistul, pastram distanta laterala, linie discon
 
 Cadrul 24: - da – Revenire pe banda 1 dupa biciclist, drum liber, linie discontinua.
 
-Cadrul 25: - nu – Detecteaza groapa in carosabil pe banda 1, ocolire, linie discontinua.
+Cadrul 25: - da – Detecteaza groapa in carosabil pe banda 1, ocolire, linie discontinua.
 
 Cadrul 26: - nu – Detecteaza indicator "Interzis la stanga" in fata, linie continua.
 
