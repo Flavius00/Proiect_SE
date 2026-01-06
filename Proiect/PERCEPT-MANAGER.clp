@@ -8,10 +8,10 @@
 
 ;------- Curatarea perceptiilor vechi ------------
 (defrule PERCEPT-MANAGER::hk-ag_percepts
-    (tic) ; previne stergerea perceptiilor noi in acelasi ciclu
+    (declare (salience 100)) ; Prioritate maximă
+    (tic) ; GARDA: Se execută doar când MAIN pornește un nou ciclu
     ?fp <- (ag_percept (percept_pname ?pn) (percept_pval ?pv))
 => 
-    (if (eq ?*sim-in-debug* TRUE) then (printout t "    <D>hk-ag_percepts retract " ?pn " " ?pv crlf))
     (retract ?fp)
 )
 

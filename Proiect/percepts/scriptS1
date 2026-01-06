@@ -1,10 +1,8 @@
-Iată scriptul de idei pentru Scenariul 1 (S1) rescris, incluzând permisiunea de depășire pentru fiecare cadru conform regulilor de circulație și logicii sistemului tău expert:
+Cadrul 1: - nu – Drum drept (national_road), viteză proprie 80 km/h, linie discontinuă, dar detectează indicator "Depășirea interzisă".
 
-Cadrul 1: - da – Drum drept (national_road), viteză proprie 80 km/h, linie discontinuă (broken_line).
+Cadrul 2: - nu – Detectează camion în față (truck1) la 150m. Deși linia este discontinuă, depășirea rămâne interzisă din cauza indicatorului detectat anterior.
 
-Cadrul 2: - da – Detectează camion în față (truck1) la 150m, viteză camion 60 km/h, linie discontinuă.
-
-Cadrul 3: - da – Apropiere de camion (130m), viteză 80 km/h, linie discontinuă.
+Cadrul 3: - da – Apropiere de camion (130m). Detectează indicator "Sfârșitul interzicerii de a depăși", deci manevra devine permisă pe linia discontinuă.
 
 Cadrul 4: - da – Camion la 110m, detectează indicator "Curbă la dreapta" în depărtare, linie discontinuă.
 

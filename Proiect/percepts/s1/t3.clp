@@ -1,5 +1,7 @@
 (ag_percept (percept_pobj my_car) (percept_pname isa) (percept_pval car))
 (ag_percept (percept_pobj my_car) (percept_pname speed) (percept_pval 80))
+(ag_percept (percept_pobj sign2) (percept_pname isa) (percept_pval road_sign))
+(ag_percept (percept_pobj sign2) (percept_pname type) (percept_pval end_of_overtaking_prohibition))
 (ag_percept (percept_pobj truck1) (percept_pname isa) (percept_pval vehicle))
 (ag_percept (percept_pobj truck1) (percept_pname rel_dist) (percept_pval 130))
 (ag_percept (percept_pobj truck1) (percept_pname has_speed) (percept_pval 60))
