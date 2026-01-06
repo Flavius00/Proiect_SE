@@ -2,18 +2,6 @@
 ;;; DRIVER-AGENT.clp - LOGICĂ RESCRISĂ CONFORM CERINȚELOR
 ;;; =========================================================
 
-(defmodule AGENT
-    (import MAIN deftemplate initial-fact)
-    (import PERCEPT-MANAGER deftemplate timp)
-    (import PERCEPT-MANAGER deftemplate ag_percept)
-    (export deftemplate ag_overtaking) 
-)
-
-(deftemplate AGENT::ag_overtaking 
-    (slot ag_name)
-    (slot ag_value)
-)
-
 ;; =========================================================
 ;; 1. CURĂȚARE ȘI REFRESH (SALIENȚĂ MARE)
 ;; =========================================================
@@ -166,7 +154,15 @@
     (timp (valoare ?t)) 
     ?fcvd <- (ag_overtaking (ag_name ?a) (ag_value ?b))
     =>
+    (if (eq ?*ag-measure-time* TRUE)
+     then 
+        (printout t "TIME_MEASURE|T=" ?t "|Manevra=" ?a "|Start=" (time) crlf))
+    
     (printout t ">>> DRIVER-AGENT la T=" ?t ": " ?a " este " ?b crlf)
+    
+    (if (eq ?*ag-measure-time* TRUE)
+     then 
+        (printout t "TIME_MEASURE|T=" ?t "|Manevra=" ?a "|End=" (time) crlf))
     (retract ?fcvd)
 )
 
