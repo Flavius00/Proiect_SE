@@ -1,5 +1,3 @@
-Iată scriptul de idei pentru Scenariul 2 (S2 - Mediu Urban), adaptat pentru a fi consistent cu regulile stabilite (2-3 obiecte pe cadru, precizarea tipului de linie și a permisiunii de depășire), fără diacritice:
-
 Cadrul 1: - da – Drum urban (city_road), viteza 45 km/h, linie discontinua (broken_line).
 
 Cadrul 2: - da – Detecteaza trecere de pietoni (pedestrian_crossing) in fata, linie discontinua.

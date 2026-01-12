@@ -1,0 +1,5 @@
+(ag_percept (percept_pobj sign_city) (percept_pname isa) (percept_pval road_sign))
+(ag_percept (percept_pobj sign_city) (percept_pname type) (percept_pval enter_city_limit))
+(ag_percept (percept_pobj line1) (percept_pname isa) (percept_pval line))
+(ag_percept (percept_pobj line1) (percept_pname type) (percept_pval broken_line))
+(ag_percept (percept_pobj my_car) (percept_pname isa) (percept_pval car))

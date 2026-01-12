@@ -1,0 +1,69 @@
+Cadrul 1: - da – Rulare pe drum național, zonă de munte, viteză 80 km/h, linie discontinuă (broken_line).
+
+Cadrul 2: - nu – Intrare în curbă periculoasă, linia devine continuă (continuous_line).
+
+Cadrul 3: - nu – Detectează indicator "Depășirea interzisă" (overtaking_prohibited), linie continuă.
+
+Cadrul 4: - nu – Ieșire din curbă, linie continuă, viteză 70 km/h.
+
+Cadrul 5: - nu – Ajungem din urmă un vehicul lent (tractor/utilaj), distanță 100m, linie continuă.
+
+Cadrul 6: - nu – Apropiere de utilaj (50m), linie continuă.
+
+Cadrul 7: - nu – Drumul devine drept, linia devine discontinuă (broken_line). Depășirea interzisă de memorie (indicatorul de la T3).
+
+Cadrul 8: - nu – Menținere în spatele utilajului, linie discontinuă, așteptare anulare restricție.
+
+Cadrul 9: - da – Detectează indicator "Sfârșitul interzicerii de a depăși" (end_of_overtaking_prohibition). Memoria se șterge, depășirea devine permisă (broken_line).
+
+Cadrul 10: - nu – Verificare siguranță: vine o mașină de pe contrasens (front_contrasens), linie discontinuă.
+
+Cadrul 11: - nu – Mașina de pe contrasens trece, linie discontinuă.
+
+Cadrul 12: - da – Inițiere depășire, semnal stânga, accelerație, linie discontinuă.
+
+Cadrul 13: - da – În dreptul utilajului, viteză 90 km/h, linie discontinuă.
+
+Cadrul 14: - da – Finalizare depășire, revenire pe bandă, linie discontinuă.
+
+Cadrul 15: - da – Drum liber în față, accelerare, linie discontinuă.
+
+Cadrul 16: - da – Începe o ploaie torențială (heavy_rain), vizibilitate redusă (low).
+
+Cadrul 17: - nu – Condiții meteo grele + vizibilitate scăzută -> regula interzice depășirea, chiar dacă linia e discontinuă.
+
+Cadrul 18: - nu – Ploaia continuă, reducem viteza la 70 km/h, linie discontinuă.
+
+Cadrul 19: - da – Ploaia se oprește, carosabil umed (wet_road), vizibilitatea revine la normal. Depășirea devine iar permisă.
+
+Cadrul 20: - da – Drum drept în coborâre, vizibilitate bună, linie discontinuă.
+
+Cadrul 21: - da – Accelerare gravitațională, viteză 95 km/h.
+
+Cadrul 22: - da – Viteză crește la 100 km/h.
+
+Cadrul 23: - nu – TEST CRITIC T23. Viteză 110 km/h pe national_road. Regula T23 afișează "PERICULOASA - VITEZA PREA MARE".
+
+Cadrul 24: - da – Frânare pentru restabilire viteză legală (90 km/h), linie discontinuă.
+
+Cadrul 25: - nu – Detectează zonă cu obstacol pe bandă (pothole_on_lane_1), linie continuă.
+
+Cadrul 26: - nu – Ocolire obstacol prin încălcarea marcajului (situație de urgență), linie continuă.
+
+Cadrul 27: - da – Obstacol depășit, revenire pe bandă, linie discontinuă.
+
+Cadrul 28: - nu – Detectează indicator "Intrare localitate" (enter_city_limit), reducere viteză.
+
+Cadrul 29: - da – Intrare în sat, viteză 50 km/h, linie discontinuă.
+
+Cadrul 30: - nu – Trecere de pietoni (pedestrian_crossing) semnalizată, linie continuă înainte de trecere.
+
+Cadrul 31: - nu – Pieton pe trecere (crossing), oprire completă. Siguranța are prioritate.
+
+Cadrul 32: - nu – Pietonul a trecut, pornim de pe loc, linie continuă.
+
+Cadrul 33: - da – Ieșire din zona trecerii, linie discontinuă.
+
+Cadrul 34: - nu – Vehicul rapid vine din spate cu viteză mare (high_speed_approaching), noi rulăm cu 50 km/h.
+
+Cadrul 35: - nu – Vehiculul din spate ne depășește (passing_us), menținem banda. Final scenariu.

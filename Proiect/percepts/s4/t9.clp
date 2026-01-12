@@ -1,0 +1,5 @@
+(ag_percept (percept_pobj sign_end) (percept_pname isa) (percept_pval road_sign))
+(ag_percept (percept_pobj sign_end) (percept_pname type) (percept_pval end_of_overtaking_prohibition))
+(ag_percept (percept_pobj line1) (percept_pname isa) (percept_pval line))
+(ag_percept (percept_pobj line1) (percept_pname type) (percept_pval broken_line))
+(ag_percept (percept_pobj my_car) (percept_pname isa) (percept_pval car))
