@@ -1,0 +1,3 @@
+(ag_percept (percept_pobj my_car) (percept_pname speed) (percept_pval 30))
+(ag_percept (percept_pobj road1) (percept_pname warning) (percept_pval school_zone))
+(ag_percept (percept_pobj line1) (percept_pname type) (percept_pval continuous_line))

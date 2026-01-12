@@ -1,0 +1,69 @@
+Cadrul 1: - da – Rulare pe autostradă, banda 1, viteză 110 km/h, linie discontinuă (broken_line).
+
+Cadrul 2: - da – Intenție depășire camion, linie discontinuă.
+
+Cadrul 3: - nu – Un vehicul vine cu viteză foarte mare din spate pe banda 2 (high_speed_approaching). Regula interzice depășirea.
+
+Cadrul 4: - nu – Vehiculul rapid este încă în spate, menținem banda.
+
+Cadrul 5: - nu – Vehiculul rapid ajunge în dreptul nostru (passing_us). Depășirea interzisă.
+
+Cadrul 6: - da – Vehiculul rapid s-a dus. Drum liber, inițiere depășire.
+
+Cadrul 7: - da – Rulare pe banda 2, viteză 120 km/h, linie discontinuă.
+
+Cadrul 8: - da – Revenire pe banda 1, linie discontinuă.
+
+Cadrul 9: - da – Drum liber, creștere viteză, linie discontinuă.
+
+Cadrul 10: - da – Viteză 125 km/h.
+
+Cadrul 11: - da – Viteză 128 km/h.
+
+Cadrul 12: - da – Viteză 130 km/h (limita legală).
+
+Cadrul 13: - da – Începem să accelerăm ușor peste limită.
+
+Cadrul 14: - da – Viteză 132 km/h.
+
+Cadrul 15: - da – Viteză 135 km/h.
+
+Cadrul 16: - da – Viteză 138 km/h.
+
+Cadrul 17: - da – Menținere viteză ridicată (pregătire pentru testul T23).
+
+Cadrul 18: - da – Trafic lejer, viteză 140 km/h.
+
+Cadrul 19: - da – Viteză 142 km/h.
+
+Cadrul 20: - da – Viteză 145 km/h.
+
+Cadrul 21: - da – Continuăm cu viteză mare.
+
+Cadrul 22: - da – Ne apropiem de T23, viteză constantă.
+
+Cadrul 23: - nu – TEST CRITIC T23. Suntem pe highway cu 145 km/h. Regula T23 afișează "PERICULOASA - PESTE LIMITA AUTOSTRADA".
+
+Cadrul 24: - da – Frânare bruscă, revenire la 100 km/h, linie discontinuă.
+
+Cadrul 25: - nu – Semnalizăm dreapta, status preparing_exit. Regula interzice depășirea altor vehicule în timpul manevrei de ieșire.
+
+Cadrul 26: - nu – Intrare pe banda de decelerare (deceleration_lane). Agentul recomandă viteza 50.
+
+Cadrul 27: - nu – Rulare pe bretea, reducere viteză la 60 km/h.
+
+Cadrul 28: - da – Intrare în oraș (city_road), viteză 50 km/h, linie discontinuă.
+
+Cadrul 29: - da – Rulare normală în oraș.
+
+Cadrul 30: - nu – Indicator "Atenție Copii" (attention_children). Agentul activează regula speed-children și recomandă 30 km/h.
+
+Cadrul 31: - nu – Menținere zonă școală, viteză 30 km/h.
+
+Cadrul 32: - nu – Copii pe trotuar (monitorizare), menținem prudența.
+
+Cadrul 33: - da – Ieșire din zona școlii, accelerare la 50 km/h.
+
+Cadrul 34: - nu – Intenție de oprire (pulling_over) pentru a parca. Regula interzice depășirea.
+
+Cadrul 35: - nu – Oprire completă. Final scenariu.

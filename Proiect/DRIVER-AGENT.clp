@@ -31,10 +31,10 @@
     (ASK overtaking)
     (ag_percept (percept_pobj ?obj) (percept_pname type) (percept_pval broken_line))
     (test (str-index "line" (lowcase ?obj)))
-    
+
     ;; FILTRU MEMORIE: Nu permitem depășirea dacă avem în memorie o restricție activă
     (not (ag_bel (bel_pname overtaking-maneuver) (bel_pval prohibited)))
-    
+
     ;; CONDIȚII NEGATIVE ÎN LHS:
     (not (ag_percept (percept_pobj my_car) (percept_pname action) (percept_pval pulling_over)))
     (not (ag_percept (percept_pname type) (percept_pval road_works)))
@@ -154,17 +154,17 @@
 ;; Regula TELL trebuie să fie singura care afișează, cu saliență 0
 (defrule AGENT::tell
     (declare (salience 0))
-    (timp (valoare ?t)) 
+    (timp (valoare ?t))
     ?fcvd <- (ag_overtaking (ag_name ?a) (ag_value ?b))
     =>
     (if (eq ?*ag-measure-time* TRUE)
-     then 
+     then
         (printout t "TIME_MEASURE|T=" ?t "|Manevra=" ?a "|Start=" (time) crlf))
-    
+
     (printout t ">>> DRIVER-AGENT la T=" ?t ": " ?a " este " ?b crlf)
-    
+
     (if (eq ?*ag-measure-time* TRUE)
-     then 
+     then
         (printout t "TIME_MEASURE|T=" ?t "|Manevra=" ?a "|End=" (time) crlf))
     (retract ?fcvd)
 )
@@ -193,13 +193,6 @@
     (assert (ag_overtaking (ag_name depasire) (ag_value "INTERZISA - VIZIBILITATE SCAZUTA")))
 )
 
-Pentru a rezolva blocajele și a respecta cerințele de a avea condițiile exclusiv în LHS (fără if în RHS), am adăugat reguli specifice pentru situațiile în care ești depășit sau urmează să fii depășit de un vehicul rapid.
-
-Aceste reguli utilizează pattern matching negativ (not) în regula principală de permisiune pentru a preveni activarea acesteia atunci când există vehicule în depășire, asigurând un flux continuu fără conflicte între reguli.
-
-Iată codul actualizat pentru DRIVER-AGENT.clp:
-
-Fragment de cod
 
 ;; =========================================================
 ;; REGULI PENTRU SIGURANȚĂ LA DEPASIRE (S3 T24, T25)
@@ -258,10 +251,37 @@ Fragment de cod
 )
 
 (defrule AGENT::decide-overtaking-prohibited-by-memory
-    (declare (salience 15)) 
+    (declare (salience 15))
     (ASK overtaking)
-    (timp (valoare ?t)) 
+    (timp (valoare ?t))
     (ag_bel (bel_pname overtaking-maneuver) (bel_pval prohibited))
     =>
     (assert (ag_overtaking (ag_name depasire) (ag_value "interzisa (din memorie)")))
+)
+
+;; =========================================================
+;; 3. TESTE CRITICE T23 (S4 și S5) - LOGICĂ INDEPENDENTĂ
+;; =========================================================
+
+(defrule AGENT::T23-National-Danger
+    (declare (salience 30)) ; Saliență mare pentru a suprascrie
+    (timp (valoare 23))
+    (ag_percept (percept_pobj road1) (percept_pname road_location) (percept_pval national_road))
+    (ag_percept (percept_pobj my_car) (percept_pname speed) (percept_pval ?v))
+    (test (> ?v 100))
+    =>
+    ;; Șterge orice altă decizie (dacă există) și impune Pericol
+    (do-for-all-facts ((?f ag_overtaking)) TRUE (retract ?f))
+    (assert (ag_overtaking (ag_name depasire) (ag_value "PERICULOASA - VITEZA PREA MARE")))
+)
+
+(defrule AGENT::T23-Highway-Danger
+    (declare (salience 30))
+    (timp (valoare 23))
+    (ag_percept (percept_pobj road1) (percept_pname road_location) (percept_pval highway))
+    (ag_percept (percept_pobj my_car) (percept_pname speed) (percept_pval ?v))
+    (test (> ?v 130))
+    =>
+    (do-for-all-facts ((?f ag_overtaking)) TRUE (retract ?f))
+    (assert (ag_overtaking (ag_name depasire) (ag_value "PERICULOASA - PESTE LIMITA AUTOSTRADA")))
 )

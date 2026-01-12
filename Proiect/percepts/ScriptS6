@@ -1,0 +1,69 @@
+Cadrul 1: - da – Rulare în oraș (city_road), viteză 50 km/h, linie discontinuă.
+
+Cadrul 2: - da – Detectăm indicator "Ieșire localitate" (end_city_limit).
+
+Cadrul 3: - da – Intrare pe drum național (national_road), accelerare.
+
+Cadrul 4: - da – Viteză crește la 70 km/h.
+
+Cadrul 5: - da – Viteză 90 km/h (legală). Drum liber.
+
+Cadrul 6: - da – Ajungem din urmă un camion lent (rel_dist 50m). Linie discontinuă.
+
+Cadrul 7: - da – Intenție depășire, semnal stânga. Agentul verifică permisiunile.
+
+Cadrul 8: - nu – Blocaj 1: Apar lucrări pe carosabil (road_works). Regula interzice depășirea.
+
+Cadrul 9: - nu – Anulare semnalizare, reducere viteză la 50 km/h (zona lucrări).
+
+Cadrul 10: - nu – Rulare în spatele camionului prin zona de lucrări.
+
+Cadrul 11: - nu – Lucrările continuă.
+
+Cadrul 12: - da – Zona de lucrări s-a terminat. Putem accelera.
+
+Cadrul 13: - da – Viteză revenită la 80 km/h. Linie discontinuă.
+
+Cadrul 14: - da – Intenție depășire (a doua încercare). Semnal stânga.
+
+Cadrul 15: - nu – Blocaj 2: Începe ploaia torențială (heavy_rain) + vizibilitate scăzută (low). Regula interzice depășirea.
+
+Cadrul 16: - nu – Menținem banda, viteză adaptată, fără depășire.
+
+Cadrul 17: - nu – Ploaia continuă, vizibilitate redusă.
+
+Cadrul 18: - da – Ploaia se oprește, vizibilitatea revine la normal (high).
+
+Cadrul 19: - da – A treia încercare. Semnal stânga. Condiții perfecte.
+
+Cadrul 20: - da – Inițiere depășire (permisă). Accelerare.
+
+Cadrul 21: - da – Pe contrasens, paralel cu camionul.
+
+Cadrul 22: - da – Finalizare depășire, revenire pe bandă.
+
+Cadrul 23: - da – Drum liber în față, 90 km/h.
+
+Cadrul 24: - da – Rulare constantă pe drum național.
+
+Cadrul 25: - nu – Semnalizăm dreapta pentru a părăsi drumul principal.
+
+Cadrul 26: - nu – Status drum: preparing_exit. Regula interzice alte depășiri.
+
+Cadrul 27: - nu – Frânare, pregătire viraj.
+
+Cadrul 28: - nu – Viraj dreapta executat.
+
+Cadrul 29: - da – Rulare pe drum secundar, viteză 40 km/h.
+
+Cadrul 30: - nu – Obstacol: Copii pe carosabil. Regula de siguranță intervine.
+
+Cadrul 31: - nu – Oprire completă pentru siguranță.
+
+Cadrul 32: - da – Drum liber, plecare de pe loc.
+
+Cadrul 33: - da – Căutare loc parcare.
+
+Cadrul 34: - da – Parcare (pulling_over).
+
+Cadrul 35: - da – Motor oprit. Final scenariu.

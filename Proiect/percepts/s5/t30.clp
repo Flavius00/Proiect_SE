@@ -1,0 +1,5 @@
+(ag_percept (percept_pobj sign_school) (percept_pname isa) (percept_pval road_sign))
+(ag_percept (percept_pobj sign_school) (percept_pname type) (percept_pval attention_children))
+(ag_percept (percept_pobj road1) (percept_pname warning) (percept_pval attention_children))
+(ag_percept (percept_pobj line1) (percept_pname type) (percept_pval continuous_line))
+(ag_percept (percept_pobj my_car) (percept_pname speed) (percept_pval 40))

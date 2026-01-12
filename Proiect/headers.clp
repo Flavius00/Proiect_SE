@@ -26,9 +26,9 @@
 
 (deftemplate PERCEPT-MANAGER::timp (slot valoare))
 
-(deftemplate PERCEPT-MANAGER::ag_percept 
+(deftemplate PERCEPT-MANAGER::ag_percept
     (slot percept_pobj)
-    (slot percept_pname) 
+    (slot percept_pname)
     (slot percept_pval)
     (slot percept_pdir)
 )
@@ -47,8 +47,8 @@
     (import MAIN deftemplate initial-fact)
     (import PERCEPT-MANAGER deftemplate timp)
     (import PERCEPT-MANAGER deftemplate ag_percept)
-    (export deftemplate ag_bel)    
-    (export deftemplate ag_overtaking) 
+    (export deftemplate ag_bel)
+    (export deftemplate ag_overtaking)
 )
 
 ; Acum variabila globala va fi recunoscuta deoarece modulul AGENT a fost definit mai sus
@@ -59,14 +59,14 @@
 )
 
 (deftemplate AGENT::ag_bel
-    (slot bel_type) 
-    (slot bel_timeslice) 
-    (slot bel_pname) 
-    (slot bel_pval) 
+    (slot bel_type)
+    (slot bel_timeslice)
+    (slot bel_pname)
+    (slot bel_pval)
     (slot bel_pdir)
 )
 
-(deftemplate AGENT::ag_overtaking 
+(deftemplate AGENT::ag_overtaking
     (slot ag_name)
     (slot ag_value)
 )
